@@ -1,0 +1,5 @@
+# Add a line to your hosts file.
+# This must match the values for GUEST_IP and APP_DOMAIN set in run.sh
+192.168.33.10 magento2.dev.ctors.net
+192.168.33.10 phpmyadmin.magento2.dev.ctors.net
+192.168.33.10 roundcube.magento2.dev.ctors.net

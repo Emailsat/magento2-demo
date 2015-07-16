@@ -33,8 +33,8 @@ DEPENDENCIES=(
     tools
     vim
     php
-    magento2
     mysql
+    magento2
     apache
     phpmyadmin
     roundcube

@@ -6,8 +6,8 @@ pushd /vagrant
 
 git clone https://github.com/magento/magento2.git
 cd magento2
-
 composer.phar install
+
 cd bin
 ./magento setup:install \
   --base-url=http://${APP_DOMAIN}/ \
@@ -23,8 +23,11 @@ cd bin
   --currency=EUR \
   --timezone=Europe/Brussels
 
+cd ..
 composer.phar config repositories.magento composer http://packages.magento.com
 composer.phar require magento/sample-data 1.0.0-beta
+
+cd bin
 ./magento setup:upgrade
 ./magento sampledata:install admin
 

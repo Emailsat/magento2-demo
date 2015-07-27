@@ -23,7 +23,10 @@ cd bin
   --currency=EUR \
   --timezone=Europe/Brussels
 
+./magento setup:static-content:deploy
+
 cd ..
+
 composer.phar config repositories.magento composer http://packages.magento.com
 composer.phar require magento/sample-data 1.0.0-beta
 
